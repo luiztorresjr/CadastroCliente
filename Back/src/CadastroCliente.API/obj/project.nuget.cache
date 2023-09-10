@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mU6sc4savkSj/6ie8B9j+5FZ8+Ul2sXJ5EQIHwWIbz0fMcZvAVVzSYOS9Ev8McrQ6LBwwnSmfEyu7b3zRibntA==",
+  "dgSpecHash": "M7ce78IIygoLPPz3y5GxBX5r2B41G7najGRJFcnfwqiH8tcZmt5HHgdBAnU6MObeUw/4KAyewVHaDNUsjIQ97Q==",
   "success": true,
-  "projectFilePath": "D:\\GIT\\Projeto teste\\CadastroCliente\\Back\\src\\CadastroCliente.API\\CadastroCliente.API.csproj",
+  "projectFilePath": "d:\\GIT\\Projeto teste\\CadastroCliente\\Back\\src\\CadastroCliente.API\\CadastroCliente.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LuizT\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\LuizT\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.10\\microsoft.data.sqlite.core.7.0.10.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GIT\\Projeto teste\\CadastroCliente\\Back\\src\\CadastroCliente.API\\CadastroCliente.API.csproj": {}
+    "d:\\GIT\\Projeto teste\\CadastroCliente\\Back\\src\\CadastroCliente.API\\CadastroCliente.API.csproj": {}
   },
   "projects": {
-    "D:\\GIT\\Projeto teste\\CadastroCliente\\Back\\src\\CadastroCliente.API\\CadastroCliente.API.csproj": {
+    "d:\\GIT\\Projeto teste\\CadastroCliente\\Back\\src\\CadastroCliente.API\\CadastroCliente.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GIT\\Projeto teste\\CadastroCliente\\Back\\src\\CadastroCliente.API\\CadastroCliente.API.csproj",
+        "projectUniqueName": "d:\\GIT\\Projeto teste\\CadastroCliente\\Back\\src\\CadastroCliente.API\\CadastroCliente.API.csproj",
         "projectName": "CadastroCliente.API",
-        "projectPath": "D:\\GIT\\Projeto teste\\CadastroCliente\\Back\\src\\CadastroCliente.API\\CadastroCliente.API.csproj",
+        "projectPath": "d:\\GIT\\Projeto teste\\CadastroCliente\\Back\\src\\CadastroCliente.API\\CadastroCliente.API.csproj",
         "packagesPath": "C:\\Users\\LuizT\\.nuget\\packages\\",
-        "outputPath": "D:\\GIT\\Projeto teste\\CadastroCliente\\Back\\src\\CadastroCliente.API\\obj\\",
+        "outputPath": "d:\\GIT\\Projeto teste\\CadastroCliente\\Back\\src\\CadastroCliente.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LuizT\\AppData\\Roaming\\NuGet\\NuGet.Config",
