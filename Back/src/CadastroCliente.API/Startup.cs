@@ -1,8 +1,12 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-using CadastroCliente.API.Data;
+using CadastroCliente.Application.Interfaces;
+using CadastroCliente.Application.Service;
+using CadastroCliente.Infra;
+using CadastroCliente.Infra.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,10 +32,21 @@ namespace CadastroCliente.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DataContext>(
+            services.AddDbContext<CadastroClienteContext>(
                 context => context.UseSqlite(Configuration.GetConnectionString("Default"))
             );
-            services.AddControllers();
+            services.AddControllers()
+                .AddJsonOptions(options =>
+                        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter())
+                    )
+                .AddJsonOptions(options =>
+                        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles
+                );
+
+            services.AddScoped<IClienteService, ClienteService>();
+            services.AddScoped<IBaseRepository, BaseRepository>();
+            services.AddScoped<IClienteRepository, ClienteRepository>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CadastroCliente.API", Version = "v1" });

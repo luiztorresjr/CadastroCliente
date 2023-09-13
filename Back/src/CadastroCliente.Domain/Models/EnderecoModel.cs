@@ -1,11 +1,12 @@
+    
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CadastroCliente.API.Models
+namespace CadastroCliente.Domain
 {
-    public class Endereco
+    public class EnderecoModel
     {
         public int Id { get; set; }
         public string Cep { get; set; }
@@ -15,6 +16,6 @@ namespace CadastroCliente.API.Models
         public string Localidade { get; set; }
         public string Uf { get; set; }
         public string Ddd {get; set; }
-        public int ClienteId {get; set;}
+        public IEnumerable<ClienteEnderecoModel>? ClientesEnderecos { get; set;}
     }
 }
