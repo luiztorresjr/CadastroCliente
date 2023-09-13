@@ -485,3 +485,5 @@ Thumbs.db
 *.db
 *.db-shm
 *.db-wal
+Back/src/CadastroCliente.Infra/Migrations/20230911213556_Initial.cs
+Back/src/CadastroCliente.Infra/Migrations/20230911213556_Initial.Designer.cs
