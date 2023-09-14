@@ -9,9 +9,6 @@
 *.userosscache
 *.sln.docstates
 
-# User-specific files (MonoDevelop/Xamarin Studio)
-*.userprefs
-
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -194,10 +191,9 @@ Backup*/
 UpgradeLog*.XML
 UpgradeLog*.htm
 
-# SQL Server files
-*.mdf
-*.ldf
+# SQLite
 *.db
+
 # Compiled output
 /dist
 /tmp
@@ -257,3 +253,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+migrations/
