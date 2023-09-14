@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CadastroCliente.API.Models
+namespace CadastroCliente.Domain.Models
 {
     public class Endereco
     {
@@ -15,6 +15,6 @@ namespace CadastroCliente.API.Models
         public string Localidade { get; set; }
         public string Uf { get; set; }
         public string Ddd {get; set; }
-        public int ClienteId {get; set;}
+        public IEnumerable<EnderecoCliente> EnderecosClientes {get; set;}
     }
 }
