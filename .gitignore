@@ -302,3 +302,6 @@ Thumbs.db
 cache/
 .vscode/
 dist/
+
+/Cadastro.db*
+*Cadastro.db-*

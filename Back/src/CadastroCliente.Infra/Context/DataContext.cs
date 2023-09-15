@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+using CadastroCliente.Domain.Models;
 
 namespace CadastroCliente.Infra.Context
 {
@@ -8,10 +10,16 @@ namespace CadastroCliente.Infra.Context
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<EnderecoCliente> EnderecosClientes { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder builder){
-            builder.Entity<EnderecoCliente>()
-                   .HasKey(EC => new {EC.EnderecoId, EC.ClienteId});
-                
+         protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<EnderecoCliente>()
+                .HasKey(PE => new {PE.ClienteId, PE.EnderecoId});
+
+
+            modelBuilder.Entity<Cliente>()
+                .HasMany(e => e.EnderecosClientes)
+                .WithOne(rs => rs.Cliente)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

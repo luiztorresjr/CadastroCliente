@@ -15,6 +15,7 @@ namespace CadastroCliente.Domain.Models
         public string Localidade { get; set; }
         public string Uf { get; set; }
         public string Ddd {get; set; }
-        public IEnumerable<EnderecoCliente> EnderecosClientes {get; set;}
+        public int Numero {get; set;}
+        public IEnumerable<EnderecoCliente>? EnderecosClientes {get; set;}
     }
 }
